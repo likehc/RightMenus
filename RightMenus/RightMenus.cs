@@ -58,8 +58,7 @@ namespace RightMenus
             TreeNode lnkFile = new TreeNode() { Text = "快捷方式", Name = RegEdit.Explorer.FileType.LnkFile.Name };
             TreeNode txtType = new TreeNode() { Text = "TXT文件", Name = RegEdit.Explorer.FileType.TxtType.Name };
             TreeNode exeType = new TreeNode() { Text = "EXE文件", Name = RegEdit.Explorer.FileType.ExeType.Name };
-            TreeNode dllType = new TreeNode() { Text = "DLL文件", Name = RegEdit.Explorer.FileType.DllType.Name };
-            exFilesType.Nodes.AddRange(new TreeNode[] { lnkFile, exeType, dllType, txtType });
+            exFilesType.Nodes.AddRange(new TreeNode[] { lnkFile, exeType, txtType });
 
             explorerRoot.Nodes.AddRange(new TreeNode[] { exMyComputer, exLocalDisk, exAllFiles, exContents, exDesktop, exFolders, exNew, exRecycleBin, exOthers, exFilesType });
             treeV.Nodes.Add(explorerRoot);
@@ -263,6 +262,10 @@ namespace RightMenus
                 listV.Items.Clear();
                 BackUp(_typeStr);
                 _winOneMenuList = MenusLib.GetDescriptionByXml(_winOneMenuList);
+                if (_winOneMenuList.Count<=0)
+                { 
+                    ClearTextBoxInGroupBox();
+                }
                 BindingListV(_winOneMenuList);
                 if (listV.Items.Count > 0)
                 {
