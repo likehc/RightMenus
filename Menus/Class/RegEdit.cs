@@ -23,6 +23,7 @@ namespace RightMenus
         public BaseModel Folders = new BaseModel("Folders");
         public BaseModel New = new BaseModel("New");
         public BaseModel RecycleBin = new BaseModel("RecycleBin");
+        public BaseModel SendTo = new BaseModel("SendTo");
         public BaseModel Others = new BaseModel("Others");
 
         public FileTypes FileType = new FileTypes();

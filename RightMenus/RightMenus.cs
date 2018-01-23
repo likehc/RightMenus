@@ -52,6 +52,7 @@ namespace RightMenus
             TreeNode exFolders = new TreeNode() { Text = "文件夹", Name = RegEdit.Explorer.Folders.Name };
             TreeNode exNew = new TreeNode() { Text = "新建", Name = RegEdit.Explorer.New.Name };
             TreeNode exRecycleBin = new TreeNode() { Text = "回收站", Name = RegEdit.Explorer.RecycleBin.Name };
+            TreeNode exSendTo = new TreeNode() { Text = "发送到", Name = RegEdit.Explorer.SendTo.Name };
             TreeNode exOthers = new TreeNode() { Text = "其他", Name = RegEdit.Explorer.Others.Name };
 
            // TreeNode exFilesType = new TreeNode() { Text = "文件类型" };//不可添加Name属性
@@ -60,7 +61,7 @@ namespace RightMenus
             TreeNode exeType = new TreeNode() { Text = "EXE文件", Name = RegEdit.Explorer.FileType.ExeType.Name };
             exFilesType.Nodes.AddRange(new TreeNode[] { lnkFile, exeType, txtType });
 
-            explorerRoot.Nodes.AddRange(new TreeNode[] { exMyComputer, exLocalDisk, exAllFiles, exContents, exDesktop, exFolders, exNew, exRecycleBin, exOthers, exFilesType });
+            explorerRoot.Nodes.AddRange(new TreeNode[] { exMyComputer, exLocalDisk, exAllFiles, exContents, exDesktop, exFolders, exNew, exRecycleBin, exSendTo,exOthers, exFilesType });
             treeV.Nodes.Add(explorerRoot);
             listV.CheckBoxes = true;
             listV.FullRowSelect = true;
@@ -419,6 +420,22 @@ namespace RightMenus
                     else
                     {
                         _winOneMenuList = recycleBin.GetMenuList();
+                    }
+                    break;
+                case "SendTo":
+                    SendTo SendTo = new SendTo();
+                    if (isBackUp)
+                    {
+                        _regPath = SendTo.BackUp(source, true);
+                        if (string.IsNullOrEmpty(_regPath))
+                        {
+                            MessageBox.Show("修改失败！");
+                        }
+                        listV.Items[_listIndex].ToolTipText = _regPath;
+                    }
+                    else
+                    {
+                        _winOneMenuList = SendTo.GetMenuList();
                     }
                     break;
                 case "Others":
