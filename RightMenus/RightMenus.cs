@@ -278,6 +278,8 @@ namespace RightMenus
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
+                //this.Text = "     ----修改失败" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+
             }
 
         }
@@ -310,6 +312,7 @@ namespace RightMenus
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
+                //this.Text = "     ----修改失败" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
             }
         }
         /// <summary>

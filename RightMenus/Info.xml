@@ -7,6 +7,8 @@
 	<Term Name="Compatibility" Des="兼容性疑难解答(Y)" FilePath="" Company=""  Update="true"/>
 	<Term Name="NvAppShExt" Des="用图形处理器运行" FilePath="" Company=""  Update="true"/>
 	<Term Name="OpenContainingFolderMenu" Des="打开文件位置(I)" FilePath="" Company=""  Update="true"/>	
+	<Term Name="XXX Groove GFS Context Menu Handler XXX" Des="共享文件夹同步" FilePath="" Company=""  Update="true"/>
+	
 	<Term Name="encrypt-bde-elev" Des="启用Bitlocker(B)..." FilePath="" Company="" Update="true"/>
 	<Term Name="Manage" Des="管理(G)" FilePath="" Company=""  Update="true"/>
 	<Term Name=".jnt" Des="日记本文档" FilePath="" Company=""  Update="true"/>
@@ -22,11 +24,22 @@
 	<Term Name=".xls" Des="Microsoft Excel 工作表" FilePath="" Company=""  Update="true"/>
 	<Term Name=".lnk" Des="快捷方式" FilePath="" Company=""  Update="true"/>
 	<Term Name="git_shell" Des="Get Bash Here" FilePath="" Company=""  Update="true"/>
+	<Term Name="EPP" Des="使用Windows Defender扫描..." FilePath="" Company=""  Update="true"/>
 	
 	<FileType Name=".dll" Text="DLL文件"/>
 	<FileType Name=".bmp" Text="位图图像"/>
-	<FileType Name=".docx" Text="Word 文档"/>
-	<FileType Name=".xlsx" Text="Excel 工作表"/>
-	<FileType Name=".pptx" Text="演示文稿ppt"/>
+	<FileType Name=".docx" Text="Word（docx） 文档"/>
+	<FileType Name=".doc" Text="Word（2003） 文档"/>
+	<FileType Name=".xlsx" Text="Excel（xlsx）工作表"/>
+	<FileType Name=".xls" Text="Excel（2003） 工作表"/>
+	<FileType Name=".pptx" Text="演示文稿pptx"/>
+	<FileType Name=".ppt" Text="演示文稿ppt(2003)"/>
+	
 	<FileType Name=".xml" Text="XML文档"/>
+	<FileType Name=".html" Text="html文档"/>
+	<FileType Name=".html" Text="网页文档"/>
+	<FileType Name=".bat" Text="bat文件"/>
+	<FileType Name=".js" Text="js文件"/>
+	<FileType Name=".json" Text="json文件"/>
+	
 </RightMenus>
