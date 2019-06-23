@@ -1,7 +1,7 @@
-RightMenus/bin
 !RightMenus\bin\Debug\Info.xml
 !RightMenus\bin\Debug\Menus.dll
 !RightMenus\bin\Debug\RightMenus.exe
+RightMenus/bin
 RightMenus/obj
 Menus/bin
 Menus/obj
