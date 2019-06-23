@@ -249,6 +249,29 @@ namespace RightMenus
             return null;
         }
 
-        
+        /// <summary>
+        /// 判断文件类型关联是否存在
+        /// </summary>
+        /// <param name="type">文件格式 如.exe 、.txt</param>
+        /// <returns>存在返回true,否则为false</returns>
+        public static bool ExistFileType(string type)
+        {
+            bool reslut = false;
+            if (string.IsNullOrEmpty(type))
+            {
+                return reslut;
+            }
+            RegistryKey cr = Registry.ClassesRoot;
+            RegistryKey exist = cr.OpenSubKey(type, true);
+            if (exist != null)
+            {
+                string value = exist.GetValue("").ToString();
+                if (value !="")
+                {
+                    reslut = true;
+                }
+            }
+            return reslut;
+        }
     }
 }

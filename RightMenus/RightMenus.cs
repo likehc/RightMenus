@@ -90,10 +90,14 @@ namespace RightMenus
                 _xml = doc.SelectNodes("/RightMenus/FileType");
                 foreach (XmlNode item in _xml)
                 {
-                   // _fileNameStr = item.Attributes["Name"].Value;
-                    string text = item.Attributes["Text"].Value;
-                    TreeNode lnkFile = new TreeNode() { Text = text, Name = "FileType" };
-                    exFilesType.Nodes.Add(lnkFile);
+                    _fileNameStr = item.Attributes["Name"].Value;
+                    bool exist = MenusLib.ExistFileType(_fileNameStr);
+                    if (exist)
+                    {
+                        string text = item.Attributes["Text"].Value;
+                        TreeNode lnkFile = new TreeNode() { Text = text, Name = "FileType" };
+                        exFilesType.Nodes.Add(lnkFile);
+                    }
                 }
 
                 //string names = _xml[0].Attributes["Name"].Value;
