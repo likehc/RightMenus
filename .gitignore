@@ -1,6 +1,10 @@
 RightMenus/bin
+!RightMenus\bin\Debug\Info.xml
+!RightMenus\bin\Debug\Menus.dll
+!RightMenus\bin\Debug\RightMenus.exe
 RightMenus/obj
 Menus/bin
 Menus/obj
 RightMenus.v12.suo
 RightMenus.v12.suo
+
