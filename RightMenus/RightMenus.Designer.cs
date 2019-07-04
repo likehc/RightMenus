@@ -66,8 +66,9 @@
             // 
             this.treeV.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
+            this.treeV.HideSelection = false;
             this.treeV.Location = new System.Drawing.Point(16, 2);
-            this.treeV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.treeV.Margin = new System.Windows.Forms.Padding(4);
             this.treeV.Name = "treeV";
             this.treeV.Size = new System.Drawing.Size(228, 483);
             this.treeV.TabIndex = 0;
@@ -80,7 +81,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.listV.Location = new System.Drawing.Point(255, 2);
-            this.listV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listV.Margin = new System.Windows.Forms.Padding(4);
             this.listV.Name = "listV";
             this.listV.Size = new System.Drawing.Size(877, 293);
             this.listV.TabIndex = 1;
@@ -111,9 +112,9 @@
             this.groupB.Controls.Add(this.labVer);
             this.groupB.Controls.Add(this.labFileName);
             this.groupB.Location = new System.Drawing.Point(255, 304);
-            this.groupB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupB.Margin = new System.Windows.Forms.Padding(4);
             this.groupB.Name = "groupB";
-            this.groupB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupB.Padding = new System.Windows.Forms.Padding(4);
             this.groupB.Size = new System.Drawing.Size(879, 182);
             this.groupB.TabIndex = 2;
             this.groupB.TabStop = false;
@@ -122,7 +123,7 @@
             // pictureBox
             // 
             this.pictureBox.Location = new System.Drawing.Point(48, 48);
-            this.pictureBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox.Name = "pictureBox";
             this.pictureBox.Size = new System.Drawing.Size(48, 40);
             this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -136,7 +137,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtRegLocDetail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtRegLocDetail.Location = new System.Drawing.Point(143, 146);
-            this.txtRegLocDetail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRegLocDetail.Margin = new System.Windows.Forms.Padding(4);
             this.txtRegLocDetail.Name = "txtRegLocDetail";
             this.txtRegLocDetail.ReadOnly = true;
             this.txtRegLocDetail.Size = new System.Drawing.Size(712, 18);
@@ -149,7 +150,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtFilePathDetail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtFilePathDetail.Location = new System.Drawing.Point(131, 116);
-            this.txtFilePathDetail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFilePathDetail.Margin = new System.Windows.Forms.Padding(4);
             this.txtFilePathDetail.Name = "txtFilePathDetail";
             this.txtFilePathDetail.ReadOnly = true;
             this.txtFilePathDetail.Size = new System.Drawing.Size(724, 18);
@@ -159,7 +160,7 @@
             // 
             this.txtMd5Detail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMd5Detail.Location = new System.Drawing.Point(221, 86);
-            this.txtMd5Detail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMd5Detail.Margin = new System.Windows.Forms.Padding(4);
             this.txtMd5Detail.Name = "txtMd5Detail";
             this.txtMd5Detail.ReadOnly = true;
             this.txtMd5Detail.Size = new System.Drawing.Size(268, 18);
@@ -169,7 +170,7 @@
             // 
             this.txtDesDetail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDesDetail.Location = new System.Drawing.Point(247, 56);
-            this.txtDesDetail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDesDetail.Margin = new System.Windows.Forms.Padding(4);
             this.txtDesDetail.Name = "txtDesDetail";
             this.txtDesDetail.ReadOnly = true;
             this.txtDesDetail.Size = new System.Drawing.Size(268, 18);
@@ -179,7 +180,7 @@
             // 
             this.txtFileSizeDetail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtFileSizeDetail.Location = new System.Drawing.Point(628, 85);
-            this.txtFileSizeDetail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFileSizeDetail.Margin = new System.Windows.Forms.Padding(4);
             this.txtFileSizeDetail.Name = "txtFileSizeDetail";
             this.txtFileSizeDetail.ReadOnly = true;
             this.txtFileSizeDetail.Size = new System.Drawing.Size(228, 18);
@@ -189,7 +190,7 @@
             // 
             this.txtCreTimeDetail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCreTimeDetail.Location = new System.Drawing.Point(628, 56);
-            this.txtCreTimeDetail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCreTimeDetail.Margin = new System.Windows.Forms.Padding(4);
             this.txtCreTimeDetail.Name = "txtCreTimeDetail";
             this.txtCreTimeDetail.ReadOnly = true;
             this.txtCreTimeDetail.Size = new System.Drawing.Size(228, 18);
@@ -199,7 +200,7 @@
             // 
             this.txtVerDetail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtVerDetail.Location = new System.Drawing.Point(628, 28);
-            this.txtVerDetail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtVerDetail.Margin = new System.Windows.Forms.Padding(4);
             this.txtVerDetail.Name = "txtVerDetail";
             this.txtVerDetail.ReadOnly = true;
             this.txtVerDetail.Size = new System.Drawing.Size(228, 18);
@@ -209,7 +210,7 @@
             // 
             this.txtFileNameDetail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtFileNameDetail.Location = new System.Drawing.Point(247, 26);
-            this.txtFileNameDetail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFileNameDetail.Margin = new System.Windows.Forms.Padding(4);
             this.txtFileNameDetail.Name = "txtFileNameDetail";
             this.txtFileNameDetail.ReadOnly = true;
             this.txtFileNameDetail.Size = new System.Drawing.Size(268, 18);
@@ -351,7 +352,7 @@
             this.Controls.Add(this.listV);
             this.Controls.Add(this.treeV);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "RightMenus";
             this.Text = "右键菜单管理";
             this.Load += new System.EventHandler(this.RightMenus_Load);

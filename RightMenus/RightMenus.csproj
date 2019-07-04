@@ -79,6 +79,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="STATIC_PARS.cs" />
     <EmbeddedResource Include="RightMenus.resx">
       <DependentUpon>RightMenus.cs</DependentUpon>
     </EmbeddedResource>
