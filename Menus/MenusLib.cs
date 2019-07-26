@@ -265,6 +265,11 @@ namespace RightMenus
             RegistryKey exist = cr.OpenSubKey(type, true);
             if (exist != null)
             {
+                if (exist.GetValue("") == null)
+                if (exist.GetValue("") == null)
+                {
+                    return reslut;
+                }
                 string value = exist.GetValue("").ToString();
                 if (value !="")
                 {
